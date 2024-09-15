@@ -1,0 +1,322 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+:root {
+  --primary-color: #3d5cb8;
+  --primary-color-dark: #334c99;
+  --text-dark: #0f172a;
+  --text-light: #64748b;
+  --extra-light: #f1f5f9;
+  --white: #ffffff;
+  --max-width: 1200px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* .section__container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 5rem 1rem;
+}
+
+.section__header {
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 3rem;
+  color: var(--text-dark);
+} */
+
+.btn {
+  padding: 0.75rem 2rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--white);
+  background-color: var(--primary-color);
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: var(--primary-color-dark);
+}
+
+a {
+  text-decoration: none;
+}
+
+/* img {
+  width: 100%;
+  display: flex;
+} */
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.nav__logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.link a {
+  font-weight: 500;
+  color: var(--text-light);
+  transition: 0.3s;
+}
+
+.link a:hover {
+  color: var(--text-dark);
+}
+
+.header__container .section__header {
+  text-align: center;
+  font-size: 3rem;
+  line-height: 4rem;
+}
+
+.booking__container {
+  /* border-radius: 2rem; */
+  border: 1px solid var(--extra-light);
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+  height: 500px;
+}
+/* Container to align dropdowns horizontally */
+.dropdowns-container {
+  display: flex;
+  justify-content: center; /* Center the dropdowns within the container */
+  gap: 1rem; /* Space between the dropdowns */
+  margin: 1rem auto; /* Center the container horizontally with some margin */
+  
+}
+
+/* Common styling for dropdown container */
+.dropdown-container {
+  position: relative;
+  width: 150px; /* Width for the dropdown */
+}
+
+/* Styling for dropdown select element */
+.dropdown-select {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid black;/* Light border color */
+  border-radius: 5px;
+
+  font-weight: 700;
+  background-color: #fff; /* White background */
+  color: black; /* Dark text color */
+  cursor: pointer;
+  appearance: none; /* Remove default dropdown arrow */
+  /* background-color:  #334c99; */
+  height: 50px;
+}
+
+
+
+.passenger-dropdown .dropdown-select{
+  width:170px;
+}
+
+/* Styling for dropdown arrow */
+.arrow {
+  position: absolute;
+  right: 0.5rem; /* Space from the right */
+  top: 30%; /* Center vertically */
+  transform: translateY(-50%); /* Center vertically */
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  font-size: 0.75rem; /* Adjust size as needed */
+  width: 10px; /* Adjust width for better alignment */
+  height: 10px; /* Adjust height for better alignment */
+  line-height: 0; /* Prevent extra space around the arrow */
+}
+
+/* Arrow pointing down */
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+/* Container for quantity controls */
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* Space between buttons and quantity display */
+  position: absolute;
+  right: 0; /* Align to the right of the dropdown container */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+
+/* Styling for quantity buttons */
+.quantity-btn {
+  border: 1px solid #ddd;
+  border-radius: 0.25rem;
+  background-color: #fff;
+  color: #333;
+  font-size: 1rem;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* Styling for quantity display */
+.quantity {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+
+/*  navigation styles */
+
+.booking__nav {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  background-color: var(--extra-light);
+  border-radius: 5px;
+  margin-top: 50px;
+}
+
+.booking__nav span {
+  flex: 1;
+  padding: 1rem 2rem;
+  font-weight: 500;
+  color: var(--text-light);
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.booking__nav span:nth-child(2) {
+  color: var(--white);
+  background-color: var(--primary-color);
+}
+
+.booking__container form {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr) auto;
+  gap: 1rem;
+}
+
+.booking__container .input__content {
+  width: 100%;
+}
+
+.booking__container .form__group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.booking__container .form__group span {
+  padding: 10px;
+  font-size: 1.5rem;
+  color: var(--text-dark);
+  background-color: var(--extra-light);
+  border-radius: 1rem;
+}
+
+.booking__container .input__group {
+  width: 100%;
+  position: relative;
+}
+
+.booking__container label {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--text-dark);
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+.booking__container input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid var(--primary-color);
+  color: var(--text-dark);
+}
+
+.booking__container input:focus ~ label {
+  font-size: 0.8rem;
+  top: 0;
+}
+
+.booking__container .form__group p {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: var(--text-light);
+}
+
+.booking__container .searchbtn {
+  display: flex;
+  flex-direction: column; /* Align items in a column */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically if needed */
+  background-color:  #3d5cb8;
+  padding:3 rem;
+
+}
+
+.searchbtn {
+  padding: 1rem 4rem;
+  outline: none;
+  border: none;
+  font-size: 1rem; /* Adjusted for readability */
+  font-weight: 600;
+  color: var(--white);
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 50px auto; /* Center the button horizontally */
+  display: block; /* Ensure the button is a block-level element */
+}
+
+.searchbtn:hover {
+  background-color: black;
+}
+
+a {
+  text-decoration: none;
+}
